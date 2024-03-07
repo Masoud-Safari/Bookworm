@@ -13,6 +13,7 @@
 		C580F84C2B99729100253EEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C580F84B2B99729100253EEA /* Preview Assets.xcassets */; };
 		C5C297722B9A2F6C003BE7CE /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C297712B9A2F6C003BE7CE /* Book.swift */; };
 		C5C297742B9A30E1003BE7CE /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C297732B9A30E1003BE7CE /* AddBookView.swift */; };
+		C5C297762B9A39BD003BE7CE /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C297752B9A39BD003BE7CE /* RatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C580F84B2B99729100253EEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5C297712B9A2F6C003BE7CE /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C5C297732B9A30E1003BE7CE /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		C5C297752B9A39BD003BE7CE /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C5C297712B9A2F6C003BE7CE /* Book.swift */,
 				C580F8462B99728D00253EEA /* ContentView.swift */,
 				C5C297732B9A30E1003BE7CE /* AddBookView.swift */,
+				C5C297752B9A39BD003BE7CE /* RatingView.swift */,
 				C580F8482B99729100253EEA /* Assets.xcassets */,
 				C580F84A2B99729100253EEA /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 				C580F8472B99728D00253EEA /* ContentView.swift in Sources */,
 				C580F8452B99728D00253EEA /* BookwormApp.swift in Sources */,
 				C5C297722B9A2F6C003BE7CE /* Book.swift in Sources */,
+				C5C297762B9A39BD003BE7CE /* RatingView.swift in Sources */,
 				C5C297742B9A30E1003BE7CE /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
