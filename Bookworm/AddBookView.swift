@@ -17,6 +17,10 @@ struct AddBookView: View {
     @State private var review = ""
     @State private var rating = 3
     
+    @State private var showingAlert = false
+    @State private var alertTitle = ""
+    @State private var alertMessage = ""
+    
     let genres = ["fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
     var body: some View {
@@ -40,6 +44,20 @@ struct AddBookView: View {
                 
                 Section {
                     Button("Save") {
+                        guard title.trimmingCharacters(in: .whitespaces) != "" else {
+                            alertTitle = "Invalid title"
+                            alertMessage = "The title is empty. Please enter a title."
+                            showingAlert = true
+                            return
+                        }
+                        
+                        guard author.trimmingCharacters(in: .whitespaces) != "" else {
+                            alertTitle = "Invalid author"
+                            alertMessage = "The author is empty. Please enter an author."
+                            showingAlert = true
+                            return
+                        }
+                        
                         let newBook = Book(title: title, author: author, genre: genre, review: review, rating: rating)
                         modelContext.insert(newBook)
                         dismiss()
@@ -47,6 +65,10 @@ struct AddBookView: View {
                 }
             }
             .navigationTitle("Add Book")
+            .alert(alertTitle, isPresented: $showingAlert) {
+            } message: {
+                Text(alertMessage)
+            }
         }
     }
 }
