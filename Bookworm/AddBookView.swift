@@ -21,7 +21,7 @@ struct AddBookView: View {
     @State private var alertTitle = ""
     @State private var alertMessage = ""
     
-    let genres = ["fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
+    let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
     var body: some View {
         NavigationStack {
